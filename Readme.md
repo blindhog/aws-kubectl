@@ -33,8 +33,8 @@ The purpose of the `eks-kubectl` repo is to create a docker container for kubctl
     ```
 5. Update k8s config
     ```
-    aws eks update-kubeconfig --name example
+    aws eks update-kubeconfig --name ClusterName
     ```
 6. Run kubectl commands
    ```
-   kubectl get pods --name example
+   kubectl get pods --all-namespaces
