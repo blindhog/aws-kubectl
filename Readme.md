@@ -3,7 +3,9 @@ The purpose of the `eks-kubectl` repo is to create a docker container for kubctl
 
 # Documentation References
 [Amazon Install kubectl documentation](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+
 [Amazon Install eksctl documentation](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
+
 [Amazon Install AWS CLI documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 # Build Docker Images
