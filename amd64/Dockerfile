@@ -1,8 +1,8 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
 RUN apt-get update && apt-get install -y curl unzip less vim jq groff iputils-ping python3 python3-pip
 RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install ansible kubernetes
+RUN python3 -m pip install -r $(uname -m)/requirements.txt
 # Install kubectl
 RUN curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.22.6/2022-03-09/bin/linux/amd64/kubectl
 RUN chmod 755 ./kubectl
